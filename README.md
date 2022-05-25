@@ -34,7 +34,7 @@ First, the script loads in the corpus and splits it up into to datasets, ```real
 Then, the script finds the 20 most frequent GPEs in each dataset, plots them to a bar chart and saves the plot.
 
 ## Usage
-This script is quite simple to run. First you need to put the ```real_fake_news``` corpus into the ```in``` folder. Then, you need to run the ```setup_lang.sh``` script. Then, point the command line to the ```lang_assignment2``` folder and run the ```assignment2.py``` script from the ```src``` folder.
+This script is quite simple to run. First you need to put the ```real_fake_news``` corpus into the ```in``` folder. Also make sure that you have downloaded the proper spacy model with ```python -m spacy download en_core_web_trf```. Then, you need to run the ```setup_lang.sh``` script. Then, point the command line to the ```lang_assignment2``` folder and run the ```assignment2.py``` script from the ```src``` folder.
 
 ## Results
 The bar charts show that most fake news in the corpus are related to Russia and the US. Due to the way the NLP pipeline does NER tagging, ```America```, ```US```, ```U.S``` is all tagged as different entities, though they should be the same. A larger model might help with that. The real news results are more related to the US and Iran, with the same type of tagging problems. Many American states are also tagged as seperate from the US, which is more acceptable. This shows us that the corpus is very centered on the us, which makes sense since presumably the corpus is made from largely American news. 
