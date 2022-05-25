@@ -22,7 +22,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def load_data():
-    filename = os.path.join("..", "..", "..", "CDS-LANG", "tabular_examples", "fake_or_real_news.csv")
+    filename = os.path.join("in", "fake_or_real_news.csv")
     data = pd.read_csv(filename)
     real_news = data[data["label"] == "REAL"]
     fake_news = data[data["label"] == "FAKE"]
