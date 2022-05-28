@@ -30,7 +30,7 @@ For this assignment, you should create a private Github repository and add me as
 
 ## methods
 I chose to do the second option.
-First, the script loads in the corpus and splits it up into to datasets, ```real``` and ```fake```. Then, for every headline in each dataset, it gets the sentiment scores, using the ```VADER``` ```polarity_scores``` function. Then, using ```NER``` it finds all of the ```GPEs``` in the headlines. Then, each headline along with its GPE and sentiment score are saved to a csv. This results in two csv files, one for ```real_news``` and one for ```fake_news```.
+First, the script loads in the corpus and splits it up into two datasets, ```real``` and ```fake```. Then, for every headline in each dataset, it gets the sentiment scores, using the ```VADER``` ```polarity_scores``` function. Then, using ```NER``` it finds all of the ```GPEs``` in the headlines. Then, each headline along with its GPE and sentiment score are saved to a csv. This results in two csv files, one for ```real_news``` and one for ```fake_news```.
 Then, the script finds the 20 most frequent GPEs in each dataset, plots them to a bar chart and saves the plot.
 
 ## Usage
